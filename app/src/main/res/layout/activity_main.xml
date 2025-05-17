@@ -36,7 +36,7 @@
         android:layout_marginTop="16dp"
         android:text="ToDoList"
         android:textSize="22sp"
-        android:fontFamily="@font/Candy_Beans"
+        android:fontFamily="@font/candy_beans"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

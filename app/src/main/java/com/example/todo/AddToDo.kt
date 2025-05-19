@@ -8,6 +8,7 @@ import android.provider.CalendarContract.Calendars
 import android.util.Log
 import android.widget.DatePicker
 import android.widget.TimePicker
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -21,9 +22,11 @@ import java.util.Locale
 class AddToDo : AppCompatActivity() {
     lateinit var binding: ActivityAddToDoBinding
     private var calendar: Calendar = Calendar.getInstance()
+    private lateinit var databaseHelper: DatabaseHelper
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAddToDoBinding.inflate(layoutInflater)
+        databaseHelper = DatabaseHelper(this)
 
         binding.btnBack.setOnClickListener{
             onBackPressed()
@@ -60,6 +63,10 @@ class AddToDo : AppCompatActivity() {
             var date = binding.txtDate.text.toString()
             var time = binding.txtTime.text.toString()
             Log.d("Data","$title - $description - $date - $time")
+            var todo = TodoList(0,title,description, date, time)
+            databaseHelper.insertDATA(todo)
+            Toast.makeText(this,"Save Data",Toast.LENGTH_SHORT).show()
+            finish()
         }
 
         setContentView(binding.root)

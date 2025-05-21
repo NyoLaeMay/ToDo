@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@drawable/card_bg"
-    android:layout_margin="5dp"
+    android:layout_margin="10dp"
     android:layout_height="wrap_content">
 
     <TextView
@@ -49,4 +49,5 @@
         app:layout_constraintEnd_toStartOf="@+id/imgDelete"
         app:layout_constraintTop_toTopOf="@+id/imgDelete"
         app:srcCompat="@drawable/ic_edit" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

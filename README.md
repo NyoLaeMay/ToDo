@@ -1,35 +1,25 @@
-📝 To-Do List Android Application
-A clean, modern, and intuitive To-Do List app built with Kotlin and Android Studio, designed to help users efficiently manage their daily tasks. The app enables users to add, edit, and delete tasks—each with a title, description, date, and time. All task data is stored locally using SQLite, with optional future integration for Firebase cloud sync.
+# ✅ To-Do List Android App
 
-✅ Features
-Add, edit, and delete tasks with real-time UI updates
+A sleek and intuitive **To-Do List** application built using **Kotlin** and **Android Studio**, designed for efficient task management. The app allows users to seamlessly add, edit, and delete tasks, each with specific details like title, description, date, and time—making daily organization simple and effective.
 
-Custom task cards using RecyclerView and ConstraintLayout
+---
 
-Confirmation dialogs for important actions using AlertDialog
+## 🧩 Features
 
-Local data storage using SQLite
+- ➕ Add, edit, and delete tasks with real-time UI updates  
+- 🗂️ Custom card layouts for tasks using **RecyclerView**  
+- 🧭 Organized UI with **ConstraintLayout** for responsiveness  
+- ⚠️ Confirmation dialogs for critical actions (e.g., delete)  
+- 💾 Local data persistence using **SQLite**  
+- 🧼 Clean, scalable, and maintainable Kotlin code  
 
-Clean, modular, and scalable code architecture
+---
 
-Responsive UI optimized for modern Android devices
+## 🛠️ Technologies Used
 
-🛠 Technologies Used
-Kotlin
-Android SDK
-SQLite
-RecyclerView
-ConstraintLayout
-AlertDialog
-Gradle
-
-🚀 Getting Started
-Clone the repository
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/todo-list-android.git
-Open the project in Android Studio
-
-Build and run the app on an Android emulator or physical device
+- **Language**: Kotlin  
+- **IDE**: Android Studio  
+- **UI**: RecyclerView, ConstraintLayout  
+- **Database**: SQLite  
+- **UI Components**: AlertDialog  
+- **Build System**: Gradle 
